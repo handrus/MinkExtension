@@ -310,6 +310,9 @@ class Extension implements ExtensionInterface
                                 // scalarNode('selenium-version')->
                                 //     defaultValue(isset($config['selenium2']['capabilities']['selenium-version']) ? $config['selenium2']['capabilities']['selenium-version'] : '2.31.0')->
                                 // end()->
+                                scalarNode('tunnel-identifier')->
+                                    defaultValue(isset($config['selenium2']['capabilities']['tunnel-identifier']) ? $config['selenium2']['capabilities']['tunnel-identifier'] : '')->
+                                end()->
                                 scalarNode('max-duration')->
                                     defaultValue(isset($config['selenium2']['capabilities']['max-duration']) ? $config['selenium2']['capabilities']['max-duration'] : '300')->
                                 end()->
